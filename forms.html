@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+</head>
+<body>
+    <form action = "loggin.html" method = "GET" enctype="multipart/form-data">
+        <div>
+            <label for = "userId">Enter user id : </label>
+            <input type = "text" name = "userId" id = userId  required>
+        </div>
+        <div>
+            <label for = "password">Enter user password : </label>
+            <input type = "password" name = "Password" id = password minlength = "6" required>
+        </div>
+        <div>
+            <label for = "Dateofyear">Date of Year : </label>
+            <input type = "number" name = "Dateofyear" id = "Dateofyear">
+        </div>
+        <div>
+            <label for = "dateofbirth">Date of Birth : </label>
+            <input type = "date" name = "dateofbirth" id = "dateofbirth" min = "2000-01-01">
+        </div>
+        <div>
+            <labe1 for = "email">E-mail : </labe1>
+            <input type="email" name = "email" id = "email">
+        </div>
+        <div>
+            <label for = "textarea"> About </label>
+            <textarea name="textarea" id="textarea"></textarea>
+        </div>
+        <div>
+            <label for = "termsandconditions"> terms and conditions</label>
+            <input type = "checkbox" name = "termsandconditions" id = "termsandconditions">
+        </div>
+        <div>
+            <input type = "radio" name = "gender" id = "male" value = "male">
+            <label for = "male"> Male </label>
+        </div>
+        <div>
+            <input type = "radio" name = "gender" id = "Female" value = "female">
+            <label for = "Female"> Female </label>
+        </div>
+        <div>
+            <select name = "state" id = "state">
+                <option value = "TamilNadu"> TamilNadu </option>
+                <option value = "Kerala">Kerala</option>
+                <option value="MP">MP</option>
+                <option value="Delhi"> Delhi</option>
+            </select>
+        </div>
+        <div>
+            <label for = "file">Resume</label>
+            <input type = "file" name = "file" id ="file">
+        </div>
+        <br/>
+        <button type = "submit">Sign Up</button>
+        <button type = "reset">Reset</button>
+    </form>
+</body>
+</html>
+
